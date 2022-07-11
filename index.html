@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Awesome Website</title>
+    </head>
+
+    <style>
+        * {
+            margin: 0px;
+            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container1 {
+            background: #1F2937;
+            height: 600px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .header div {
+            margin-top: 20px;
+        }
+
+        .header .logo {
+            background-color: white;
+            
+            text-align: center;
+            
+            margin-left: 150px;
+
+            width: 100px;
+            height: 100px;
+        }
+
+        .header .links {
+            display: flex;
+            margin-right: 150px;
+        }
+
+        .links div {
+            width: 150px;
+            height: fit-content;
+            
+            margin-top: 15px;
+            
+            color: white;
+        }
+
+        .content1 {
+            display:flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .content1 div {
+            flex: 1 1 auto;
+
+            margin-top: 100px;
+            margin-left: 120px;
+            margin-right: 120px;
+
+            height: 300px;
+            width: 100px;
+        }
+
+        .content1 .left {
+            margin-right: -40px;
+        }
+
+        .left h1 {
+            color: #F9FAF8;
+
+            font-size: 48px;
+        }
+
+        .left h2 {
+            color: #E5E8EB;
+
+            font-size: 18px;
+        }
+
+        .left button {
+            border-radius: 15px;
+            padding: 10px;
+            
+            text-align: center;
+            
+            margin-top: 5px;
+            padding-right: 40px;
+            padding-left: 40px;
+            
+            color:#E5E8EB;
+            background: #3882F6;
+        }
+
+        .left button:active {
+            background: #154ea9;
+        }
+
+        .left a {
+            color:#E5E8EB;
+        }
+
+
+        a:visited {
+        color: #E5E8EB;
+        }
+
+
+        a:hover {
+        color: #E5E8EB;
+        }
+
+        a:active {
+        color: #E5E8EB;
+        }
+
+        .content1 .right {
+            background:gray;
+        }
+
+        .container2 {
+            padding: 25px;
+        }
+        
+        .container2 h2 {
+            text-align: center;
+            font-size: 36px;
+
+            margin-top: 25px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+
+            height: 175px;
+            
+            margin-top: 75px;
+        }
+
+        .images div {
+            border: 4px solid #3882F6;
+            border-radius: 15px;
+
+            width: 175px;
+            height: 175px;
+            
+            text-align: center;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+
+            height: 175px;
+
+            margin-top: -50px;
+        }
+
+        .text div {
+            color: #505151;
+            
+            border: 4px solid transparent;
+            
+            width: 175px;
+
+            text-align: center;
+        }
+
+        .container3 {
+            background-color: #E5E7EB;
+        }
+
+        .container3 p {
+            text-align: center;
+            
+            padding: 175px;
+            
+            font-size: 36px;
+            font-weight: lighter;
+        }
+
+        .container4 {
+            padding: 70px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container4 .sign_in_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 1550px;
+            height: 200px;
+
+            margin: auto;
+
+            color: white;
+
+            gap: 40px;
+            
+            border-radius: 10px;
+
+        }
+
+        .sign_in_box {
+            background-color: #3882F6;
+        }
+
+        .sign_in_box button {
+            border-radius: 10px;
+            padding: 10px;
+            
+            text-align: center;
+            
+            
+            padding-right: 40px;
+            padding-left: 40px;
+            
+            color:#E5E8EB;
+            background: #3882F6;
+
+            
+            font-size: 24px;
+        }
+
+        .sign_in_box .text {
+            margin-top: 0px;
+
+            font-size: 24px;
+        }
+
+        .container5 {
+            background: #1F2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+    </style>
+
+    <body>
+        <div class="container1">
+            <div class="header">
+                <div class="logo">
+                    <h4>placeholder logo</h4>
+                </div>
+                <div class="links">
+                    <div class="link1">
+                        <a href="placeholder.html">header link 1</a> 
+                    </div>
+                    <div class="link2">
+                        <a href="placeholder.html">header link 2</a> 
+                    </div>
+                    <div class="link3">
+                        <a href="placeholder.html">header link 3</a> 
+                    </div>
+                </div>
+            </div>
+        
+            <div class="content1">
+                <div class="left">
+                    <h1><strong>This website is awesome.</strong></h1>
+                    <h2>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</h2>
+                    <button id="lcbutton"> <strong>Sign Up</strong> </button>
+                    <script>
+                        document.getElementById("lcbutton").onclick = function () {
+                            location.href = "placeholder.html";
+                        };
+                    </script>
+                </div>
+                <div class="right">
+                    placeholder image
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h2>
+                Some random information.
+            </h2>
+            <div class="images">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4"></div>
+            </div>
+            <div class="text">
+                <div class="txt1">this is some subtext under an image or illustration</div>
+                <div class="txt2">this is some subtext under an image or illustration</div>
+                <div class="txt3">this is some subtext under an image or illustration</div>
+                <div class="txt4">this is some subtext under an image or illustration</div>
+            </div>
+        </div>
+        <div class="container3">
+            <p><em>This is an inspiring quote or a testimonial from a customer. 
+                Maybe it's just filling up space, or maybe people will actually read it. 
+                Who knows? All I know is that it looks nice.</em> <br> <strong>    
+                    -Thor, Norse God of Thunder</strong></p>
+        </div>
+        <div class="container4">
+            <div class="sign_in_box">
+                <div class="text">
+                    <p><strong>Call to action It's time!</strong> <br>
+                        Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <div class="button">
+                    <button id="subutton"> <strong>Sign Up</strong> </button>
+                    <script>
+                        document.getElementById("subutton").onclick = function () {
+                            location.href = "placeholder.html";
+                        };
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="container5">
+            <p>Copyright © The Odin Project 2021 (Made by calcium-jpg)</p>
+        </div>
+    </body>
+</html>
